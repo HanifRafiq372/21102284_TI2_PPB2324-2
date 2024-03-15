@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
                 children: [
                   Container(
                     padding: const EdgeInsets.all(20),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       color: Colors.lightBlueAccent,
                     ),
@@ -143,16 +143,16 @@ class MyApp extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Bantuan"),
-                      Image.asset("assets/gambar1.png", scale: 15),
+                      const Text("Bantuan"),
+                      Image.asset("assets/gambar1.png", width: 30, height: 30,),
                     ],
                   ),
                   const SizedBox(height: 15),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Laporkan Masalah"),
-                      Image.asset("assets/gambar2.png", scale: 14),
+                      const Text("Laporkan Masalah"),
+                      Image.asset("assets/gambar2.png", width: 30, height: 30 ),
                     ],
                   ),
                 ],
