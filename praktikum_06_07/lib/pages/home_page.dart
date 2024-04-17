@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            'Ikhtiar Oktafio Wibowo 👏',
+                            'Muhamad Hanif Rafiq 👏',
                             style: kHeading6.copyWith(
                               color: kMatterhornBlack,
                             ),
@@ -171,6 +171,4 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
-  
-  
 }
