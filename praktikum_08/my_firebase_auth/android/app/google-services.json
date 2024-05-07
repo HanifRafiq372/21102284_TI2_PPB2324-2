@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "566180111144",
+    "project_id": "pertemuan9-21110",
+    "storage_bucket": "pertemuan9-21110.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566180111144:android:bdbb521e0208b350bc661d",
+        "android_client_info": {
+          "package_name": "com.example.firebase_auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx7d12RtDQB2yqC0P9xQNxaSr52sKz4dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
