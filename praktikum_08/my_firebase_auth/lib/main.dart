@@ -16,7 +16,7 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,8 +28,8 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: "Praktikum 8",
         debugShowCheckedModeBanner: false,
-        navigatorKey: navKey,
-        onGenerateRoute: generateDynamicRoute, // Menggunakan nama fungsi yang benar
+        navigatorKey: navKey, // Change to navKey
+        onGenerateRoute: generateDynamicRoute, // Change to generateDynamicRoute
         home: const SplashScreen(),
       ),
     );

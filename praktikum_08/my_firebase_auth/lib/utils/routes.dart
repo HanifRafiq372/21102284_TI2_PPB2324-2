@@ -19,18 +19,16 @@ Route<dynamic>? generateDynamicRoute(RouteSettings settings) {
       route = _pageRoute(body: const RegisterScreen(), settings: settings);
       break;
     case rHome:
-      // Contoh penggunaan _args
-      route = _pageRoute(body: const HomeScreen(), settings: settings); // Ubah menjadi const HomeScreen()
+      route = _pageRoute(body: const HomeScreen(), settings: settings); // Change to const HomeScreen()
       break;
     default:
-      // Kasus default untuk menangani rute yang tidak ditemukan
       route = _pageRoute(body: const NotFoundScreen(), settings: settings);
   }
 
   return route;
 }
 
-final navKey = GlobalKey<NavigatorState>();
+final GlobalKey<NavigatorState> navKey = GlobalKey<NavigatorState>(); // Change to navKey
 
 const String rLogin = '/login';
 const String rRegister = '/register';
