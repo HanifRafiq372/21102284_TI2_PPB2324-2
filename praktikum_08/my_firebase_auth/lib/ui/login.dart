@@ -75,34 +75,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     color: Color(0xFF1A237E)), // Dark Blue
               ),
               const SizedBox(
-  height: 30.0,
-),
-Row(
-  mainAxisAlignment: MainAxisAlignment.center,
-  children: [
-    GestureDetector(
-      onTap: () {
-        signInWithGoogle();
-      },
-      child: const CircleAvatar(
-        radius: 20.0,
-        backgroundImage: NetworkImage(
-            'https://img2.pngdownload.id/20190228/qby/kisspng-google-logo-google-account-g-suite-google-images-g-icon-archives-search-png-5c77ad39b77471.9286340315513470017515.jpg'),
-      ),
-    ),
-    const SizedBox(
-      width: 30.0,
-    ),
-    GestureDetector(
-      onTap: () {},
-      child: const CircleAvatar(
-        radius: 20.0,
-        backgroundImage: NetworkImage(
-            'https://freepngimg.com/thumb/business/83615-blue-icons-symbol-telephone-computer-logo.png'),
-      ),
-    )
-  ],
-),
+                height: 30.0,
+                    ),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+              ),
 
               const SizedBox(
                 height: 15,
