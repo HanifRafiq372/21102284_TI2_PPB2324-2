@@ -5,7 +5,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import '/bloc/login/login_cubit.dart';
 import '/ui/home_screen.dart';
 import '/ui/phone_auth_screen.dart';
-import '../utils/routes.dart';
+import 'package:my_firebase_auth/utils/routes.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -20,19 +20,18 @@ class _LoginScreenState extends State<LoginScreen> {
   bool passInvisible = false;
 
   Future<UserCredential> signInWithGoogle() async {
-  final GoogleSignInAccount? gUser = await GoogleSignIn().signIn();
-  final GoogleSignInAuthentication gAuth = await gUser!.authentication;
-  final credential = GoogleAuthProvider.credential(
-    accessToken: gAuth.accessToken,
-    idToken: gAuth.idToken,
-  );
-  return await FirebaseAuth.instance.signInWithCredential(credential).then(
-      (value) async => await Navigator.pushAndRemoveUntil(
-          context,
-          MaterialPageRoute(builder: (context) => const HomeScreen()),
-          (route) => false));
-}
-
+    final GoogleSignInAccount? gUser = await GoogleSignIn().signIn();
+    final GoogleSignInAuthentication gAuth = await gUser!.authentication;
+    final credential = GoogleAuthProvider.credential(
+      accessToken: gAuth.accessToken,
+      idToken: gAuth.idToken,
+    );
+    return await FirebaseAuth.instance.signInWithCredential(credential).then(
+        (value) async => await Navigator.pushAndRemoveUntil(
+            context,
+            MaterialPageRoute(builder: (context) => const HomeScreen()),
+            (route) => false));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -76,11 +75,10 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               const SizedBox(
                 height: 30.0,
-                    ),
+              ),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
               ),
-
               const SizedBox(
                 height: 15,
               ),
@@ -96,7 +94,10 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               const Text(
                 "e-mail",
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Color(0xFF1A237E)), // Dark Blue
+                style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF1A237E)), // Dark Blue
               ),
               TextFormField(
                 controller: emailEdc,
@@ -106,7 +107,10 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               const Text(
                 "password",
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Color(0xFF1A237E)), // Dark Blue
+                style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF1A237E)), // Dark Blue
               ),
               TextFormField(
                 controller: passEdc,
@@ -164,19 +168,18 @@ class _LoginScreenState extends State<LoginScreen> {
                     width: 30.0,
                   ),
                   GestureDetector(
-  onTap: () {
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-            builder: (context) => const PhoneAuthScreen()));
-  },
-  child: const CircleAvatar(
-    radius: 20.0,
-    backgroundImage: NetworkImage(
-        'https://freepngimg.com/thumb/business/83615-blue-icons-symbol-telephone-computer-logo.png'),
-  ),
-),
-
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const PhoneAuthScreen()));
+                    },
+                    child: const CircleAvatar(
+                      radius: 20.0,
+                      backgroundImage: NetworkImage(
+                          'https://freepngimg.com/thumb/business/83615-blue-icons-symbol-telephone-computer-logo.png'),
+                    ),
+                  ),
                 ],
               ),
               Row(
