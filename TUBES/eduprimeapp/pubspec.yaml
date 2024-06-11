@@ -1,0 +1,25 @@
+name: edu_prime_app
+description: Aplikasi edukasi untuk Edu Prime
+version: 1.0.0
+
+environment:
+  sdk: ">=3.4.0-282.3.beta"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.31.0
+  flutter_bloc: ^8.1.5
+  firebase_auth: ^4.19.5
+  google_sign_in: ^6.1.23
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/images/1.png
+    - assets/images/2.png
+    - assets/images/3.png

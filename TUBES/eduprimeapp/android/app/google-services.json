@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "493243648255",
+    "project_id": "eduprimeppb",
+    "storage_bucket": "eduprimeppb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493243648255:android:ab756d15ac02617c6ee4ca",
+        "android_client_info": {
+          "package_name": "com.example.eduprimeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkkxFvcNJG4FToaB04cYCtq0xbrQPZVUQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
